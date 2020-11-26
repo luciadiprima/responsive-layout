@@ -1,0 +1,58 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* { 
+    box-sizing: border-box;
+  }
+  
+  body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+  /* Link Styles */
+
+  a{
+
+
+  }
+
+  img {
+    max-width: 100%;
+  }
+  
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+	.name a,
+	.main-nav a {
+		display: block;
+		text-align: center;
+		padding: 10px 15px;
+	}
+	
+	.main-nav a {
+		font-size: .95em;
+		color: #3acec2;
+		text-transform: uppercase;
+	}
+  
+/* Section Styles */
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {}
