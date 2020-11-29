@@ -10,7 +10,7 @@ body{
       font-family: 'Roboto', Helvetica, sans-serif;
       text-decoration: none;
       text-align: center;
-      background-color: rgb(224, 246, 253);
+      width: 100%;
     }
 
 h1,
@@ -29,12 +29,7 @@ p{
   padding-bottom: 5px;
 }
 
-.portfolio-1,
-.portfolio-2,
-.portfolio-3,
-.portfolio-4,
-.portfolio-5,
-.portfolio-6 {
+.col {
     display: block;
     align-items: center;
     margin-left: auto;
@@ -89,15 +84,20 @@ li{
   background:rgb(165, 167, 168);
   margin-top: 6px;
   margin-bottom: 6px;
-  width: 150px;
-  text-align: center;
+  width: 15em;
+  align-items:center;
 }
 
 
-
 .container {
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
+  text-align: center;
+}
+
+.project-img{
+  width: 110%;
+  padding-right: 25px;
 }
 
 a:link,
@@ -128,7 +128,8 @@ color: black;
 .main-nav a {
 		display: block;
 		text-align: center;
-    padding: 10px 15px;
+    padding: 0;
+    margin:0;
     text-decoration: none;
   }
   
@@ -141,47 +142,64 @@ color: black;
 }
 
 .footer-nav{
-  padding: 20px 20px;
-  margin: 20px 20px;
+  padding: 0;
+  margin: 0;
   display: inline-block;
+  width: auto;
   text-decoration: none;
+  text-align: center;
+  font-size: .8em;
   }
 
  .footer-nav li{
    text-decoration: none;
    list-style-type: none;
    font-size: .9em;
-   text-align: center;
+   margin: 0;
+   padding:0;
  } 
+
+ .footer-nav2{
+   display: none;
+ }
   
 /* Section Styles */
 
 /* ================================= 
   Media Queries
 ==================================== */
-/*
 
 @media screen and (min-width: 768px) {
 
 .container{
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
+  padding-bottom: 1.5em;
+  text-align: center;
 }
 
-.name{
-  float: center;
+.student-name{
+  align-items: center;
 }
 
 .main-header{
   text-align: center;
+  overflow: hidden;
+  width: 100%;
 }
 
 .main-nav{
   display: inline;
-}
-.main-nav li{
   text-align: center;
-  display: inline;
+}
+
+.main-nav li{
+  float: left;
+  font-size: 14px;
+  background-color: transparent;
+  padding-right: 2px;
+  padding-left:2px;
+  align-items: center;
 }
 
 .main-nav a{
@@ -190,50 +208,99 @@ color: black;
 }
 
 .profile{
-  max-width: 100%;
+  max-width: 50%;
+  float: right;
+  padding: 18px;
+  margin-top: 20px;
 }
 
 }
 .about{
-  font-size: 1.2em;
-  padding-top: 25px;
-  margin: auto 0;
-}
-.profile{
-  float: right;
-  padding: 15px;
-}
-
-.nav a{
-  display: inline block;
+  margin-top: 20px;
+  float: left;
+  width: 50%;
+  text-align: left;
+  padding-top: 20px;
+  padding: 20px 20px;
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 
-.project{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  text-align:center;
+.portfolio{
+  font-size: 1.8em;
+  padding-bottom: 1px;
+  padding-top: 10px;
 }
 
-.box{
-  max-width: 45%
+h3{
+  padding-top: 1px;
+  font-size: 1.7em;
+}
+
+.project-content{
+  width: 80%;
   margin: 0 auto;
+  font-size: .9em;
+  padding-top: 1.5em;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 1.6em;
+  text-align: center;
 }
 
+.col{
+  float: left;
+  width: 50%;
+  text-align: center;
 }
 
-@media screen and (min-width: 1024px) {
-.container{
-  margin: 0 auto;
+.project-img{
   width: 100%;
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 20px;
 }
 
-.primary {
-  width: 40%;
+footer{
+  font-size: 1em;
 }
 
-.secondary {
-  width: 30%;
+footer ul{
+  text-align: center;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-name{
+  float: left;
+  font-size: 1em;
+  margin-left: 20px;
+}
+
+.main-nav-footer{
+  float:right;
+  display:block;
+}
+
+.main-nav-footer li{
+display: inline-block;
+margin-right: 30px;
+}
+
+.footer-info{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.5em;
+}
+
+.top,
+.name{
+  display:none;
+}
+
+.footer-nav2{
+display: block;
 }
 
 .clearfix::after {
@@ -243,4 +310,51 @@ color: black;
 }
 
 }
-*/
+
+@media screen and (min-width: 1024px) {
+
+.container{
+  width: 95%;
+  max-width: 1150px;
+}
+
+.student-name{
+ display: inline-block;
+ float: left;
+}
+
+.nav{
+  float: right;
+  width: 50%;
+}
+
+.col{
+  width: 33.33%;
+  height: 500px;
+}
+
+.project-img{
+  text-align: center;
+  padding-left: 35px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.project-content{
+  padding-bottom:0;
+}
+
+h3{
+  text-align: center;
+  font-size: 1em;
+}
+.conatiner{
+  width: 90%;
+}
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+}
