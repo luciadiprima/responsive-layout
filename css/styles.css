@@ -10,6 +10,7 @@ body{
       font-family: 'Roboto', Helvetica, sans-serif;
       text-decoration: none;
       text-align: center;
+      background-color: rgb(224, 246, 253);
     }
 
 h1,
@@ -18,11 +19,16 @@ h2{
   font-weight: bold;
 }
 
+
+h3{
+  text-align: center;
+}
+
 p{
   text-align: center;
-  padding-bottom: 20px;
-  text-size-adjust: auto;
+  padding-bottom: 5px;
 }
+
 .portfolio-1,
 .portfolio-2,
 .portfolio-3,
@@ -33,27 +39,28 @@ p{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 75%;
     margin: auto;
     max-width: 100%;
     margin-bottom: 20px;
   }
 
-  li,
-.name{
+li{
   text-decoration: none;
 }
 
 .student-name{
   text-transform: none;
   text-align: center;
+  font-size: 1.4em;
 }
 
 .about{
   text-align: center;
   font-size: 10px;
   float: right;
-  margin: 10px;
+  padding-bottom: 25px;
+  font-size: 1em;
 }
 
 .main-nav{
@@ -64,23 +71,28 @@ p{
     font-weight: bold;
     padding-top: 25px;
     text-decoration: none;
-
 }
 
 .main-nav a{
   padding: 10px 15px;
   text-align: center;
-  display: block;
-  font-size: 19px;
+  display: inline;
+  font-size: 1.4em;
   color: black;
   text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
 }
 
 .main-nav li{
-  background:white;
+  background:rgb(165, 167, 168);
   margin-top: 6px;
   margin-bottom: 6px;
+  width: 150px;
+  text-align: center;
 }
+
 
 
 .container {
@@ -97,17 +109,22 @@ color: black;
 }
 
 .profile{
-  max-width: 100;
-  align-items: center;
+  width: 100%;
+  display: block;
+  padding: 20px;
 }
 
-.name {
+.name{
 	font-size: 1.25em;
-  text-align: center;
+  font-weight: bold;
+  float: left;
+}
+
+.top{
   font-weight: bold;
 }
 
-.name a,
+
 .main-nav a {
 		display: block;
 		text-align: center;
@@ -126,13 +143,15 @@ color: black;
 .footer-nav{
   padding: 20px 20px;
   margin: 20px 20px;
-  position: inline-block;
+  display: inline-block;
   text-decoration: none;
   }
 
  .footer-nav li{
-   position: inline-block;
    text-decoration: none;
+   list-style-type: none;
+   font-size: .9em;
+   text-align: center;
  } 
   
 /* Section Styles */
@@ -140,6 +159,8 @@ color: black;
 /* ================================= 
   Media Queries
 ==================================== */
+/*
+
 @media screen and (min-width: 768px) {
 
 .container{
@@ -174,20 +195,20 @@ color: black;
 
 }
 .about{
-  font-size: 1.4em;
-  padding-top: 50px;
+  font-size: 1.2em;
+  padding-top: 25px;
   margin: auto 0;
 }
 .profile{
   float: right;
-  padding: 60px;
+  padding: 15px;
 }
 
 .nav a{
   display: inline block;
 }
 
-.portfolio-pages{
+.project{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -200,8 +221,6 @@ color: black;
 }
 
 }
-
-
 
 @media screen and (min-width: 1024px) {
 .container{
@@ -217,11 +236,11 @@ color: black;
   width: 30%;
 }
 
-
-}
-
 .clearfix::after {
   content: " ";
   display: table;
   clear: both;
 }
+
+}
+*/
