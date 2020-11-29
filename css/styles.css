@@ -7,34 +7,53 @@
   }
   
 body{
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Roboto', Helvetica, sans-serif;
       text-decoration: none;
+      text-align: center;
     }
-
-  /* Link Styles */
 
 h1,
 h2{
   text-align: center;
   font-weight: bold;
 }
+
 p{
   text-align: center;
   padding-bottom: 20px;
+  text-size-adjust: auto;
 }
-img {
-    max-width: 100%;
+.portfolio-1,
+.portfolio-2,
+.portfolio-3,
+.portfolio-4,
+.portfolio-5,
+.portfolio-6 {
     display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 
-li,
+  li,
 .name{
   text-decoration: none;
 }
 
+.student-name{
+  text-transform: none;
+  text-align: center;
+}
+
 .about{
   text-align: center;
-  padding-bottom: 25px;
+  font-size: 10px;
+  float: right;
+  margin: 10px;
 }
 
 .main-nav{
@@ -42,27 +61,27 @@ li,
     color: black;
     text-transform: uppercase;
     display: block;
-    text-align: center;
     font-weight: bold;
     padding-top: 25px;
     text-decoration: none;
+
 }
 
-
-.nav,
-.main-header,
-.footer-nav{ 
-  background: #f5f5f5;
-  list-style-type: none;
-  text-decoration: none;
+.main-nav a{
+  padding: 10px 15px;
+  text-align: center;
+  display: block;
+  font-size: 19px;
+  color: black;
+  text-transform: uppercase;
 }
 
-.footer-nav{
-  padding: 20px 20px;
-  margin: 20px 20px;
-  position: block inline;
-  text-decoration: none;
-  }
+.main-nav li{
+  background:white;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
 
 .container {
   width: 75%;
@@ -77,13 +96,9 @@ text-decoration: none;
 color: black;
 }
 
-.center{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 20px;
-  width: 75%;
-  text-decoration: none;
+.profile{
+  max-width: 100;
+  align-items: center;
 }
 
 .name {
@@ -96,14 +111,117 @@ color: black;
 .main-nav a {
 		display: block;
 		text-align: center;
-		padding: 10px 15px;
-	}
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+  
+.nav,
+.main-header,
+.footer-nav{ 
+  background: #f5f5f5;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.footer-nav{
+  padding: 20px 20px;
+  margin: 20px 20px;
+  position: inline-block;
+  text-decoration: none;
+  }
+
+ .footer-nav li{
+   position: inline-block;
+   text-decoration: none;
+ } 
   
 /* Section Styles */
 
 /* ================================= 
   Media Queries
 ==================================== */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
 
-@media screen and (min-width: 1024px) {}
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.name{
+  float: center;
+}
+
+.main-header{
+  text-align: center;
+}
+
+.main-nav{
+  display: inline;
+}
+.main-nav li{
+  text-align: center;
+  display: inline;
+}
+
+.main-nav a{
+  background-color: transparent;
+  padding: 10px 15px;
+}
+
+.profile{
+  max-width: 100%;
+}
+
+}
+.about{
+  font-size: 1.4em;
+  padding-top: 50px;
+  margin: auto 0;
+}
+.profile{
+  float: right;
+  padding: 60px;
+}
+
+.nav a{
+  display: inline block;
+}
+
+.portfolio-pages{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align:center;
+}
+
+.box{
+  max-width: 45%
+  margin: 0 auto;
+}
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+.container{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.primary {
+  width: 40%;
+}
+
+.secondary {
+  width: 30%;
+}
+
+
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
