@@ -1,8 +1,9 @@
 /* ================================= 
-  Base Element Styles
-==================================== */
+	  Base Element Styles
+	==================================== */
+	
 
-* { 
+	* { 
     box-sizing: border-box;
   }
   
@@ -13,6 +14,7 @@ body{
       width: 100%;
     }
 
+
 h1,
 h2{
   text-align: center;
@@ -20,14 +22,18 @@ h2{
 }
 
 
+
+
 h3{
   text-align: center;
 }
+
 
 p{
   text-align: center;
   padding-bottom: 5px;
 }
+
 
 .col {
     display: block;
@@ -40,15 +46,18 @@ p{
     margin-bottom: 20px;
   }
 
+
 li{
   text-decoration: none;
 }
+
 
 .student-name{
   text-transform: none;
   text-align: center;
   font-size: 1.4em;
 }
+
 
 .about{
   text-align: center;
@@ -57,6 +66,7 @@ li{
   padding-bottom: 25px;
   font-size: 1em;
 }
+
 
 .main-nav{
     list-style-type: none;
@@ -67,6 +77,7 @@ li{
     padding-top: 25px;
     text-decoration: none;
 }
+
 
 .main-nav a{
   padding: 10px 15px;
@@ -80,6 +91,7 @@ li{
   width: 100%;
 }
 
+
 .main-nav li{
   background:rgb(165, 167, 168);
   margin-top: 6px;
@@ -89,16 +101,20 @@ li{
 }
 
 
+
+
 .container {
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
+
 .project-img{
   width: 110%;
   padding-right: 25px;
 }
+
 
 a:link,
 a:visited,
@@ -108,26 +124,28 @@ text-decoration: none;
 color: black;
 }
 
+
 .profile{
   width: 100%;
   display: block;
   padding: 20px;
 }
 
+
 .name{
-	font-size: 1.25em;
+  font-size: 1.25em;
   font-weight: bold;
   float: left;
 }
+
 
 .top{
   font-weight: bold;
 }
 
-
 .main-nav a {
-		display: block;
-		text-align: center;
+    display: block;
+    text-align: center;
     padding: 0;
     margin:0;
     text-decoration: none;
@@ -141,6 +159,7 @@ color: black;
   text-decoration: none;
 }
 
+
 .footer-nav{
   padding: 0;
   margin: 0;
@@ -150,6 +169,7 @@ color: black;
   text-align: center;
   font-size: .8em;
   }
+
 
  .footer-nav li{
    text-decoration: none;
@@ -165,11 +185,14 @@ color: black;
   
 /* Section Styles */
 
+
 /* ================================= 
   Media Queries
 ==================================== */
 
+
 @media screen and (min-width: 768px) {
+
 
 .container{
   width: 95%;
@@ -178,9 +201,11 @@ color: black;
   text-align: center;
 }
 
+
 .student-name{
   align-items: center;
 }
+
 
 .main-header{
   text-align: center;
@@ -188,10 +213,12 @@ color: black;
   width: 100%;
 }
 
+
 .main-nav{
   display: inline;
   text-align: center;
 }
+
 
 .main-nav li{
   float: left;
@@ -202,10 +229,12 @@ color: black;
   align-items: center;
 }
 
+
 .main-nav a{
   background-color: transparent;
   padding: 10px 15px;
 }
+
 
 .profile{
   max-width: 50%;
@@ -213,6 +242,7 @@ color: black;
   padding: 18px;
   margin-top: 20px;
 }
+
 
 }
 .about{
@@ -226,16 +256,19 @@ color: black;
   line-height: 1.5em;
 }
 
+
 .portfolio{
   font-size: 1.8em;
   padding-bottom: 1px;
   padding-top: 10px;
 }
 
+
 h3{
   padding-top: 1px;
   font-size: 1.7em;
 }
+
 
 .project-content{
   width: 80%;
@@ -248,11 +281,13 @@ h3{
   text-align: center;
 }
 
+
 .col{
   float: left;
   width: 50%;
   text-align: center;
 }
+
 
 .project-img{
   width: 100%;
@@ -261,9 +296,11 @@ h3{
   padding-right: 20px;
 }
 
+
 footer{
   font-size: 1em;
 }
+
 
 footer ul{
   text-align: center;
@@ -272,21 +309,25 @@ footer ul{
   justify-content: space-between;
 }
 
+
 .footer-name{
   float: left;
   font-size: 1em;
   margin-left: 20px;
 }
 
+
 .main-nav-footer{
   float:right;
   display:block;
 }
 
+
 .main-nav-footer li{
 display: inline-block;
 margin-right: 30px;
 }
+
 
 .footer-info{
   padding-left: 20px;
@@ -294,14 +335,17 @@ margin-right: 30px;
   font-size: 1.5em;
 }
 
+
 .top,
 .name{
   display:none;
 }
 
+
 .footer-nav2{
 display: block;
 }
+
 
 .clearfix::after {
   content: " ";
@@ -309,28 +353,30 @@ display: block;
   clear: both;
 }
 
+
 }
+
 
 @media screen and (min-width: 1024px) {
 
+
 .container{
   width: 95%;
-  max-width: 1150px;
 }
 
 .student-name{
- display: inline-block;
- float: left;
-}
+  float: left;
+  }
+  
+.main-nav li{
+    float: left;
+  }
 
-.nav{
-  float: right;
-  width: 50%;
-}
-
-.col{
-  width: 33.33%;
-  height: 500px;
+.primary,
+.secondary,
+.tertiary{
+  width: 33.333%;
+  height: 100px;
 }
 
 .project-img{
@@ -340,15 +386,17 @@ display: block;
   width: 100%;
 }
 
+
 .project-content{
   padding-bottom:0;
 }
+
 
 h3{
   text-align: center;
   font-size: 1em;
 }
-.conatiner{
+.container{
   width: 90%;
 }
 .clearfix::after {
@@ -356,5 +404,6 @@ h3{
   display: table;
   clear: both;
 }
+
 
 }
