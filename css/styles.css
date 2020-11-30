@@ -99,7 +99,7 @@ li{
 
 .project-img{
   width: 100%;
-  display: inline block;
+  display: inline;
 }
 
 a:link,
@@ -431,7 +431,6 @@ footer ul{
   justify-content: space-between;
 }
 
-
 .footer-name{
   float: left;
   font-size: 1em;
@@ -463,9 +462,16 @@ margin-right: 30px;
   display:none;
 }
 
-
 .footer-nav2{
 visibility: visible;
+}
+
+.main-nav-footer
+.home,
+.portfolio2,
+.contact,
+.footer-name{
+ display:block;
 }
 
 .clearfix::after {
@@ -520,6 +526,9 @@ h3{
   margin: 0 auto;
 }
 
+.footer-nav2{
+  display: inline;
+}
 }
 
 .clearfix::after {
